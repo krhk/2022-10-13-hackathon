@@ -1,0 +1,19 @@
+﻿@page "/calendar"
+@inject SingletonStorageModel model
+
+<PageTitle>Kalendář</PageTitle>
+<h3>Kalendář</h3>
+@foreach (Trip trip in model.trips) {
+    <div id="@(trip.StartPosX+ trip.StartPosY + trip.Name)">
+        @(trip.Name) - Odjezd @(trip.WhenDate.ToString("D")) @(trip.WhenDate.ToString("T")) <button onclick="
+            let e = JSON.parse(localStorage.getItem('trips')).filter(g=>g.StartPosX !== '@(trip.StartPosX)' && g.StartPosY !== '@(trip.StartPosY)' && g.Name !== '@(trip.Name)');
+            localStorage.setItem('trips', JSON.stringify(e));
+            document.getElementById('@(trip.StartPosX + trip.StartPosY + trip.Name)').style.display = 'none';
+        
+        ">Delete</button>   
+        <hr>
+    </div>
+}
+@code {
+    
+}

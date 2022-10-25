@@ -1,0 +1,122 @@
+﻿@page "/FetchData"
+@using Newtonsoft.Json.Linq
+@using ChartJs.Blazor
+@using ChartJs.Blazor.BarChart
+@using ChartJs.Blazor.Common
+@using skladFim.Shared
+@using System.Net
+@using System.Text
+@using System.Drawing
+@using System.Drawing.Imaging
+
+<PageTitle>ESP KHK</PageTitle>
+
+<h1>Evidence silničních prací</h1><br />
+
+<hr class="dotted">
+
+
+
+<br />
+
+<table class="tbl">
+
+    <tr>
+        <th>Město</th>
+        <th>Planované</th>
+    </tr>
+    
+    @{
+                        @foreach (var done in P_okresy)
+        {
+                            <tr>
+
+                                <td>
+                                    <h1>@done.Key</h1></td>
+                                <td>
+                                    <p><strong>Km :</strong> @(Math.Round(done.Value.Item1 / 1000, 2))</p>
+                                    <p><strong>Roads :</strong> @done.Value.Item2</p></td>
+                                
+
+                            </tr>
+        }
+    }
+
+
+</table>
+
+<table class="tbl">
+    <tr>
+        <th style="text-align: center">Planované</th>
+    </tr>
+    <tr>
+        <td>
+            <img class="graphimage" src="@GetChart(P_okresy)" style="position: absolute; width: 500%; height: 500%; text-align: center;"/>
+        </td>
+    </tr>
+</table>
+
+@code
+{
+    // Key - okres, Value - Tuple (km, roads)
+    protected Dictionary<string, (double, int)> D_okresy = new();
+    
+    // Key - okres, Value - Tuple (km, roads)
+    protected Dictionary<string, (double, int)> P_okresy = new();
+
+    protected string JsonRequest = @"https://quickchart.io/chart?c={{type:'bar',data:{{labels:['{0}'],datasets:[{{label:'Km silnic',data:[{1}]}}, {{label: 'Úseky',data:[{2}]}}]}}}}";
+
+    protected override async Task OnInitializedAsync()
+    {
+        InitData();
+
+    }
+    
+    protected JToken GetPData()
+    {
+        return JObject.Parse(File.ReadAllText("./planned.json"))["features"];
+    }
+
+    protected JToken GetDData()
+    {
+        return JObject.Parse(File.ReadAllText("./complete.json"))["features"];
+    }
+
+    protected void InitData()
+    {
+        foreach (var DO in GetDData())
+        {
+            if (!D_okresy.ContainsKey(DO["attributes"]["nazev_okresu"].ToString()))
+            {
+                D_okresy.Add(DO["attributes"]["nazev_okresu"].ToString(), (double.Parse(DO["attributes"]["Shape__Length"].ToString()), 1));
+            }
+            else
+            {
+                D_okresy[DO["attributes"]["nazev_okresu"].ToString()] = (D_okresy[DO["attributes"]["nazev_okresu"].ToString()].Item1 +double.Parse(DO["attributes"]["Shape__Length"].ToString()), D_okresy[DO["attributes"]["nazev_okresu"].ToString()].Item2 + 1);
+            }
+        }
+        foreach (var PO in GetPData())
+        {
+            if (!P_okresy.ContainsKey(PO["attributes"]["nazev_okresu"].ToString()))
+            {
+                P_okresy.Add(PO["attributes"]["nazev_okresu"].ToString(), (double.Parse(PO["attributes"]["Shape__Length"].ToString()), 1));
+            }
+            else
+            {
+                P_okresy[PO["attributes"]["nazev_okresu"].ToString()] = (D_okresy[PO["attributes"]["nazev_okresu"].ToString()].Item1 +double.Parse(PO["attributes"]["Shape__Length"].ToString()), P_okresy[PO["attributes"]["nazev_okresu"].ToString()].Item2 + 1);
+            }
+        }
+    }
+
+    protected string GetChart(Dictionary<string, (double, int)> dc)
+    {
+        var jsonRq = string.Format(JsonRequest, string.Join("','", dc.Keys),
+            string.Join(",", dc.Values.Select(x=>x.Item1/1000)), 
+            string.Join(",", dc.Values.Select(x=>x.Item2)));
+        var client = new WebClient();
+
+        var response = client.DownloadData(jsonRq);
+        
+        return $"data:image/png;base64,{Convert.ToBase64String(response)}";
+    }
+}

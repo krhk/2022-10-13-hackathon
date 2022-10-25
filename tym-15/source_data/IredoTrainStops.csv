@@ -1,0 +1,186 @@
+﻿OBJECTID,nazev,oznaceni,typ,nazev_vusc,kod_vusc,nazev_okresu,kod_okresu,nazev_orp,kod_orp,nazev_obce,kod_obce,wkt,x,y,dp_id
+1,Doudleby nad Orlicí,532606,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Doudleby nad Orlicí,576301,POINT(50.1101 16.26),16.26,50.1101,ZST35
+2,Vamberk,541607,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Vamberk,576883,POINT(50.1188 16.2843),16.2843,50.1188,ZST171
+3,Záměl,532705,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Záměl,576921,POINT(50.1009 16.2982),16.2982,50.1009,ZST181
+4,Peklo nad Zdobnicí,541904,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Vamberk,576883,POINT(50.1228 16.307),16.307,50.1228,ZST113
+5,Potštejn,532804,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Potštejn,576671,POINT(50.0845 16.3166),16.3166,50.0845,ZST121
+6,Starkoč,574806,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Studnice,574481,POINT(50.4119 16.1021),16.1021,50.4119,ZST151
+7,Řešetova Lhota,574905,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Studnice,574481,POINT(50.4312 16.1042),16.1042,50.4312,ZST136
+8,Hodkovice u Trutnova,573600,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Jívka,579378,POINT(50.6055 16.0733),16.0733,50.6055,ZST38
+9,Rtyně v Podkrkonoší zastávka,574608,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Rtyně v Podkrkonoší,579637,POINT(50.5003 16.0925),16.0925,50.5003,ZST130
+10,Janovice u Trutnova,573402,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Jívka,579378,POINT(50.5878 16.0862),16.0862,50.5878,ZST56
+11,Václavice,538801,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Nové Město nad Metují,5211,Provodov-Šonov,574350,POINT(50.3959 16.123),16.123,50.3959,ZST170
+12,Horní Adršpach,573709,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Adršpach,547786,POINT(50.6239 16.0844),16.0844,50.6239,ZST39
+13,Náchod zastávka,538702,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Náchod,573868,POINT(50.4093 16.1536),16.1536,50.4093,ZST100
+14,Adršpach,573501,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Adršpach,547786,POINT(50.6163 16.1255),16.1255,50.6163,ZST1
+15,Náchod,538405,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Náchod,573868,POINT(50.4181 16.1726),16.1726,50.4181,ZST97
+16,Teplice nad Metují skály,573808,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Teplice nad Metují,574538,POINT(50.5978 16.1511),16.1511,50.5978,ZST158
+17,Hronov,538207,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Hronov,574082,POINT(50.4739 16.1781),16.1781,50.4739,ZST50
+18,Velké Poříčí,538512,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Velké Poříčí,547646,POINT(50.4643 16.1833),16.1833,50.4643,ZST173
+19,Náchod-Běloves,538603,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Náchod,573868,POINT(50.4277 16.1934),16.1934,50.4277,ZST98
+20,Náchod-Malé Poříčí,538504,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Náchod,573868,POINT(50.4424 16.194),16.194,50.4424,ZST99
+21,Hronov zastávka,538306,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Hronov,574082,POINT(50.4911 16.1877),16.1877,50.4911,ZST51
+22,Teplice nad Metují město,573907,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Teplice nad Metují,574538,POINT(50.5936 16.1737),16.1737,50.5936,ZST157
+23,Teplice nad Metují,537704,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Teplice nad Metují,574538,POINT(50.5825 16.1803),16.1803,50.5825,ZST156
+24,Česká Metuje,537803,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Česká Metuje,573981,POINT(50.5532 16.1862),16.1862,50.5532,ZST26
+25,Dědov,537902,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Teplice nad Metují,574538,POINT(50.5624 16.1893),16.1893,50.5624,ZST29
+26,Žďár nad Metují,538108,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Žďár nad Metují,574686,POINT(50.5382 16.2055),16.2055,50.5382,ZST182
+27,Police nad Metují,538009,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Bezděkov nad Metují,573884,POINT(50.5142 16.2133),16.2133,50.5142,ZST120
+28,Bohdašín,537605,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Teplice nad Metují,574538,POINT(50.5977 16.2124),16.2124,50.5977,ZST7
+29,Březová u Broumova,537506,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Jetřichov,574155,POINT(50.6057 16.2361),16.2361,50.6057,ZST16
+30,Meziměstí,537100,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Meziměstí,574252,POINT(50.6274 16.2442),16.2442,50.6274,ZST92
+31,Ruprechtice,537407,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Meziměstí,574252,POINT(50.6256 16.2696),16.2696,50.6256,ZST131
+32,Hynčice,537308,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Hynčice,574163,POINT(50.6251 16.2898),16.2898,50.6251,ZST52
+33,Broumov-Olivětín,536508,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Broumov,573922,POINT(50.6088 16.3294),16.3294,50.6088,ZST15
+34,Broumov,536102,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Broumov,5201,Broumov,573922,POINT(50.5815 16.341),16.341,50.5815,ZST14
+35,Rybná nad Zdobnicí,541805,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Vamberk,576883,POINT(50.1284 16.3445),16.3445,50.1284,ZST132
+36,Kostelec nad Orlicí město,532507,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Kostelec nad Orlicí,576361,POINT(50.1206 16.2064),16.2064,50.1206,ZST71
+37,Slatina nad Zdobnicí,541706,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Slatina nad Zdobnicí,576786,POINT(50.1376 16.379),16.379,50.1376,ZST141
+38,Častolovice zastávka,532200,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Častolovice,576182,POINT(50.1284 16.1919),16.1919,50.1284,ZST21
+39,Žďár nad Orlicí,540609,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Žďár nad Orlicí,576956,POINT(50.1199 16.0685),16.0685,50.1199,ZST183
+40,Častolovice,532002,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Častolovice,576182,POINT(50.1292 16.175),16.175,50.1292,ZST20
+41,Čestice,532101,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Čestice,576221,POINT(50.1311 16.149),16.149,50.1311,ZST28
+42,Synkov,532309,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Synkov-Slemeno,576816,POINT(50.1401 16.22),16.22,50.1401,ZST154
+43,Rokytnice v Orlických horách,541409,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Rokytnice v Orlických horách,576701,POINT(50.1623 16.4667),16.4667,50.1623,ZST128
+44,Slemeno,541300,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Tutleky,576841,POINT(50.1476 16.2432),16.2432,50.1476,ZST142
+45,Pěčín,541508,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Pěčín,576620,POINT(50.1615 16.4207),16.4207,50.1615,ZST112
+46,Lípa nad Orlicí,530204,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Lípa nad Orlicí,576476,POINT(50.1422 16.1038),16.1038,50.1422,ZST86
+47,Rychnov nad Kněžnou,541102,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Rychnov nad Kněžnou,576069,POINT(50.1587 16.275),16.275,50.1587,ZST133
+48,Rychnov nad Kněžnou zastávka,541201,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Rychnov nad Kněžnou,576069,POINT(50.167 16.2721),16.2721,50.167,ZST134
+49,Týniště nad Orlicí,531806,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Týniště nad Orlicí,576859,POINT(50.1555 16.0754),16.0754,50.1555,ZST168
+50,Petrovice nad Orlicí,531905,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Týniště nad Orlicí,576859,POINT(50.1745 16.0473),16.0473,50.1745,ZST114
+51,Solnice zastávka,541052,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Kvasiny,576425,POINT(50.2007 16.2577),16.2577,50.2007,ZST148
+52,Solnice,541003,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Rychnov nad Kněžnou,5213,Solnice,576808,POINT(50.2045 16.2554),16.2554,50.2045,ZST147
+53,Třebechovice pod Orebem,531608,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Třebechovice pod Orebem,571041,POINT(50.2008 15.9836),15.9836,50.2008,ZST166
+54,Bolehošť,540302,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Bolehošť,576123,POINT(50.2154 16.0664),16.0664,50.2154,ZST10
+55,Blešno,531707,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Blešno,569879,POINT(50.2154 15.9373),15.9373,50.2154,ZST6
+56,Očelice,540401,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Dobruška,5202,Očelice,576557,POINT(50.2441 16.0646),16.0646,50.2441,ZST107
+57,Opočno pod Orlickými horami,539304,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Dobruška,5202,Opočno,576590,POINT(50.2792 16.0871),16.0871,50.2792,ZST110
+58,Dobruška,540104,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Dobruška,5202,Dobruška,576271,POINT(50.29 16.1537),16.1537,50.29,ZST32
+59,Pohoří,539502,zastávka,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Dobruška,5202,Pohoří,576662,POINT(50.2923 16.0802),16.0802,50.2923,ZST119
+60,Bohuslavice nad Metují zastávka,539403,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Nové Město nad Metují,5211,Bohuslavice,573892,POINT(50.3128 16.081),16.081,50.3128,ZST9
+61,Bohuslavice nad Metují,539106,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Nové Město nad Metují,5211,Černčice,573957,POINT(50.329 16.0971),16.0971,50.329,ZST8
+62,Černčice,539205,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Nové Město nad Metují,5211,Černčice,573957,POINT(50.3353 16.107),16.107,50.3353,ZST23
+63,Nové Město nad Metují,538900,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Nové Město nad Metují,5211,Nové Město nad Metují,574279,POINT(50.3542 16.1391),16.1391,50.3542,ZST105
+64,Jaroměř,567701,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Jaroměř,5206,Jaroměř,574121,POINT(50.3426 15.9117),15.9117,50.3426,ZST57
+65,Mladé Buky,572305,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Mladé Buky,579548,POINT(50.6079 15.8422),15.8422,50.6079,ZST93
+66,Kuks,567602,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Dvůr Králové nad Labem,5203,Kuks,579416,POINT(50.3967 15.8857),15.8857,50.3967,ZST76
+67,Jaroměř zastávka,567800,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Jaroměř,5206,Jaroměř,574121,POINT(50.3578 15.9127),15.9127,50.3578,ZST58
+68,Kalná Voda,572404,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.6012 15.874),15.874,50.6012,ZST65
+69,Trutnov-Staré město,572503,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.5916 15.8831),15.8831,50.5916,ZST160
+70,Trutnov-Volanov,571000,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.5617 15.8889),15.8889,50.5617,ZST161
+71,Trutnov-Zelená Louka,572909,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.5816 15.8896),15.8896,50.5816,ZST162
+72,Trutnov hlavní nádraží,570200,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.566 15.9125),15.9125,50.566,ZST163
+73,Rychnovek,567909,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Jaroměř,5206,Rychnovek,574406,POINT(50.3615 15.9703),15.9703,50.3615,ZST135
+74,Trutnov střed,570408,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.5786 15.9465),15.9465,50.5786,ZST164
+75,Křenov,573105,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Zlatá Olešnice,579866,POINT(50.639 15.9371),15.9371,50.639,ZST75
+76,Libeč,570903,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.5972 15.9476),15.9476,50.5972,ZST82
+77,Trutnov-Poříčí,570309,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.58 15.9599),15.9599,50.58,ZST159
+78,Trutnov zastávka,570507,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.5787 15.9623),15.9623,50.5787,ZST165
+79,Bernartice u Trutnova,573006,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Bernartice,579050,POINT(50.6478 15.96),15.96,50.6478,ZST4
+80,Lhota u Trutnova,570606,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Trutnov,579025,POINT(50.5874 15.9877),15.9877,50.5874,ZST81
+81,Královec,572800,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Královec,530808,POINT(50.6739 15.9719),15.9719,50.6739,ZST73
+82,Velká Jesenice,575100,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Říkov,530786,POINT(50.3763 16.0305),16.0305,50.3763,ZST172
+83,Suchovršice,574202,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Suchovršice,579726,POINT(50.5332 16.0069),16.0069,50.5332,ZST152
+84,Petříkovice,570705,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Chvaleč,579335,POINT(50.6025 16.0043),16.0043,50.6025,ZST115
+85,Velké Svatoňovice,574301,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Velké Svatoňovice,579785,POINT(50.5413 16.0237),16.0237,50.5413,ZST174
+86,Česká Skalice,575001,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Česká Skalice,573990,POINT(50.3963 16.0554),16.0554,50.3963,ZST27
+87,Chvaleč,573303,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Chvaleč,579335,POINT(50.6001 16.0394),16.0394,50.6001,ZST55
+88,Malé Svatoňovice,574103,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Malé Svatoňovice,579513,POINT(50.5304 16.0522),16.0522,50.5304,ZST90
+89,Červený Kostelec,574509,stanice,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Červený Kostelec,573965,POINT(50.4847 16.0768),16.0768,50.4847,ZST25
+90,Radvanice,573204,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Radvanice,579629,POINT(50.5761 16.0614),16.0614,50.5761,ZST127
+91,Rtyně v Podkrkonoší,574400,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Rtyně v Podkrkonoší,579637,POINT(50.5165 16.0744),16.0744,50.5165,ZST129
+92,Olešnice,574707,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Náchod,5209,Červený Kostelec,573965,POINT(50.4582 16.0856),16.0856,50.4582,ZST109
+93,Borohrádek,540500,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Borohrádek,576131,POINT(50.0979 16.087),16.087,50.0979,ZST11
+94,Čermná nad Orlicí,540708,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Čermná nad Orlicí,576191,POINT(50.0655 16.1372),16.1372,50.0655,ZST22
+95,Kostelec nad Orlicí,532408,stanice,Královéhradecký kraj,CZ052,Rychnov nad Kněžnou,CZ0524,Kostelec nad Orlicí,5208,Kostelec nad Orlicí,576361,POINT(50.1173 16.2254),16.2254,50.1173,ZST70
+96,Ústí u Staré Paky,557900,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Nová Paka,5210,Stará Paka,573507,POINT(50.517 15.4588),15.4588,50.517,ZST169
+97,Stará Paka,566406,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Nová Paka,5210,Stará Paka,573507,POINT(50.5168 15.4879),15.4879,50.5168,ZST149
+98,Horní Branná,569509,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Vrchlabí,5215,Dolní Branná,579122,POINT(50.5975 15.5882),15.5882,50.5975,ZST40
+99,Kunčice nad Labem,569400,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Vrchlabí,5215,Kunčice nad Labem,579424,POINT(50.5847 15.6241),15.6241,50.5847,ZST77
+100,Podhůří,572107,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Vrchlabí,5215,Vrchlabí,579858,POINT(50.6015 15.6261),15.6261,50.6015,ZST118
+101,Vrchlabí,572008,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Vrchlabí,5215,Vrchlabí,579858,POINT(50.6196 15.6241),15.6241,50.6196,ZST178
+102,Klášterská Lhota,569608,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Vrchlabí,5215,Klášterská Lhota,579386,POINT(50.5594 15.6621),15.6621,50.5594,ZST67
+103,Prosečné,569806,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Vrchlabí,5215,Hostinné,579297,POINT(50.5483 15.6976),15.6976,50.5483,ZST123
+104,Hostinné město,569715,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Vrchlabí,5215,Hostinné,579297,POINT(50.54 15.7213),15.7213,50.54,ZST44
+105,Hostinné,569707,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Vrchlabí,5215,Hostinné,579297,POINT(50.5375 15.7392),15.7392,50.5375,ZST43
+106,Pilníkov,570002,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Pilníkov,579599,POINT(50.535 15.8141),15.8141,50.535,ZST116
+107,Vlčice,570101,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Vlčice,579823,POINT(50.5474 15.8355),15.8355,50.5474,ZST176
+108,Svoboda nad Úpou,572206,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Svoboda nad Úpou,579734,POINT(50.6226 15.8219),15.8219,50.6226,ZST153
+109,Dobřenice,530808,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Syrovátka,571008,POINT(50.1604 15.6581),15.6581,50.1604,ZST33
+110,Kratonohy,530907,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Kratonohy,570206,POINT(50.1583 15.6119),15.6119,50.1583,ZST74
+111,Nové Město nad Cidlinou,530600,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Nové Město,570494,POINT(50.151 15.5035),15.5035,50.151,ZST104
+112,Káranice,530709,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Káranice,570150,POINT(50.1559 15.5625),15.5625,50.1559,ZST66
+113,Lhota pod Libčany,531004,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Lhota pod Libčany,570231,POINT(50.1674 15.6973),15.6973,50.1674,ZST80
+114,Praskačka,531103,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Praskačka,570656,POINT(50.176 15.7328),15.7328,50.176,ZST122
+115,Chlumec nad Cidlinou,530501,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Chlumec nad Cidlinou,570109,POINT(50.1643 15.4586),15.4586,50.1643,ZST53
+116,Hradec Králové-Kukleny,531301,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Hradec Králové,569810,POINT(50.2029 15.7996),15.7996,50.2029,ZST45
+117,Hradec Králové hlavní nádraží,531202,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Hradec Králové,569810,POINT(50.2151 15.8109),15.8109,50.2151,ZST47
+118,Luková,564401,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Nový Bydžov,5212,Nepolisy,570478,POINT(50.1907 15.4882),15.4882,50.1907,ZST89
+119,Hradec Králové-Slezské Předměstí,531400,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Hradec Králové,569810,POINT(50.2226 15.861),15.861,50.2226,ZST46
+120,Hradec Králové zastávka,531509,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Hradec Králové,569810,POINT(50.2231 15.8429),15.8429,50.2231,ZST48
+121,Plotiště nad Labem,556803,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Hradec Králové,569810,POINT(50.2362 15.7932),15.7932,50.2362,ZST117
+122,Zachrašťany,563908,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Nový Bydžov,5212,Zachrašťany,571130,POINT(50.2152 15.4911),15.4911,50.2152,ZST180
+123,Předměřice nad Labem,568600,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Předměřice nad Labem,570672,POINT(50.2534 15.8191),15.8191,50.2534,ZST124
+124,Všestary,556605,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Všestary,571091,POINT(50.2534 15.7658),15.7658,50.2534,ZST179
+125,Dlouhé Dvory,556704,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Střezetice,570966,POINT(50.2625 15.7272),15.7272,50.2625,ZST30
+126,Nový Bydžov,564302,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Nový Bydžov,5212,Nový Bydžov,570508,POINT(50.2457 15.4871),15.4871,50.2457,ZST106
+127,Lochenice,568709,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Lochenice,570311,POINT(50.2737 15.8258),15.8258,50.2737,ZST87
+128,Dohalice,556506,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Dohalice,569976,POINT(50.2837 15.697),15.697,50.2837,ZST34
+129,Skřivany,564500,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Nový Bydžov,5212,Skřivany,570834,POINT(50.2727 15.5001),15.5001,50.2727,ZST140
+130,Smiřice,568006,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Smiřice,570877,POINT(50.3012 15.8595),15.8595,50.3012,ZST144
+131,Sadová,556308,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Sadová,573191,POINT(50.2962 15.6952),15.6952,50.2962,ZST137
+132,Černožice,568105,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Černožice,569925,POINT(50.3166 15.871),15.871,50.3166,ZST24
+133,Hněvčeves,556407,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Hněvčeves,570010,POINT(50.3132 15.723),15.723,50.3132,ZST37
+134,Smidary,564609,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Nový Bydžov,5212,Smidary,570869,POINT(50.2958 15.4967),15.4967,50.2958,ZST143
+135,Semonice,565804,zastávka,Královéhradecký kraj,CZ052,Náchod,CZ0523,Jaroměř,5206,Jaroměř,574121,POINT(50.3323 15.8787),15.8787,50.3323,ZST139
+136,Cerekvice nad Bystřicí,556209,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Hořice,5204,Cerekvice nad Bystřicí,572781,POINT(50.3264 15.7179),15.7179,50.3264,ZST18
+137,Třebovětice,556001,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Hořice,5204,Cerekvice nad Bystřicí,572781,POINT(50.328 15.7052),15.7052,50.328,ZST167
+138,Jeřice,556100,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Hořice,5204,Jeřice,572993,POINT(50.3435 15.678),15.678,50.3435,ZST59
+139,Ohnišťany,564708,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Nový Bydžov,5212,Ohnišťany,570516,POINT(50.3344 15.5083),15.5083,50.3344,ZST108
+140,Dobrá Voda u Hořic,555904,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Hořice,5204,Dobrá Voda u Hořic,572837,POINT(50.3468 15.6111),15.6111,50.3468,ZST31
+141,Hořice v Podkrkonoší,555805,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Hořice,5204,Hořice,572926,POINT(50.3571 15.6363),15.6363,50.3571,ZST42
+142,Ostroměř,555409,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Hořice,5204,Ostroměř,573272,POINT(50.3698 15.5459),15.5459,50.3698,ZST111
+143,Sobčice,555607,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Hořice,5204,Sobčice,573477,POINT(50.3761 15.52),15.52,50.3761,ZST145
+144,Žireč,567503,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Dvůr Králové nad Labem,5203,Dvůr Králové nad Labem,579203,POINT(50.404 15.8495),15.8495,50.404,ZST185
+145,Vojice,555508,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Hořice,5204,Podhorní Újezd a Vojice,573311,POINT(50.3853 15.4991),15.4991,50.3853,ZST177
+146,Dvůr Králové nad Labem,567404,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Dvůr Králové nad Labem,5203,Dvůr Králové nad Labem,579203,POINT(50.4145 15.7997),15.7997,50.4145,ZST36
+147,Butoves,555102,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Butoves,549282,POINT(50.3889 15.4261),15.4261,50.3889,ZST17
+148,Kovač,555300,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Kovač,548944,POINT(50.3931 15.4707),15.4707,50.3931,ZST72
+149,Šárovcova Lhota,564906,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Šárovcova Lhota,573256,POINT(50.4086 15.5623),15.5623,50.4086,ZST155
+150,Vitiněves,555201,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Vitiněves,573752,POINT(50.4001 15.382),15.382,50.4001,ZST175
+151,Lázně Bělohrad,564807,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Lázně Bělohrad,573094,POINT(50.427 15.5785),15.5785,50.427,ZST79
+152,Bílá Třemešná,567305,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Dvůr Králové nad Labem,5203,Bílá Třemešná,579068,POINT(50.4527 15.7343),15.7343,50.4527,ZST5
+153,Jičín,554204,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Jičín,572659,POINT(50.4315 15.3625),15.3625,50.4315,ZST60
+154,Horní Nová Ves,565002,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Lázně Bělohrad,573094,POINT(50.4516 15.5732),15.5732,50.4516,ZST41
+155,Jičín zastávka,554303,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Jičín,572659,POINT(50.4515 15.3823),15.3823,50.4515,ZST61
+156,Železnice,554105,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Železnice,573825,POINT(50.4635 15.3771),15.3771,50.4635,ZST184
+157,Mostek,567107,stanice,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Dvůr Králové nad Labem,5203,Mostek,579556,POINT(50.492 15.6935),15.6935,50.492,ZST96
+158,Nová Paka,566703,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Nová Paka,5210,Nová Paka,573248,POINT(50.4874 15.5243),15.5243,50.4874,ZST102
+159,Borovnička,567206,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Dvůr Králové nad Labem,5203,Borovnička,548821,POINT(50.5008 15.6601),15.6601,50.5008,ZST13
+160,Nová Paka město,566802,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Nová Paka,5210,Nová Paka,573248,POINT(50.4953 15.5139),15.5139,50.4953,ZST103
+161,Chotěvice,569905,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Trutnov,5214,Chotěvice,579319,POINT(50.5197 15.7611),15.7611,50.5197,ZST54
+162,Borovnice,567008,zastávka,Královéhradecký kraj,CZ052,Trutnov,CZ0525,Dvůr Králové nad Labem,5203,Borovnice,579092,POINT(50.5101 15.6055),15.6055,50.5101,ZST12
+163,Hrdoňovice,558700,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Mladějov,573205,POINT(50.4912 15.2655),15.2655,50.4912,ZST49
+164,Semínova Lhota,553701,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Újezd pod Troskami,573680,POINT(50.5188 15.2823),15.2823,50.5188,ZST138
+165,Libuň zastávka,553917,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Libuň,573124,POINT(50.5009 15.3019),15.3019,50.5009,ZST85
+166,Libuň,553909,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Libuň,573124,POINT(50.491 15.3043),15.3043,50.491,ZST84
+167,Jivany,553800,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Libuň,573124,POINT(50.5145 15.3001),15.3001,50.5145,ZST64
+168,Kněžnice,558502,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Kněžnice,573043,POINT(50.4936 15.3214),15.3214,50.4936,ZST68
+169,Cidlina,558403,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Kněžnice,573043,POINT(50.5016 15.3376),15.3376,50.5016,ZST19
+170,Kyje u Jičína,558304,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Kyje,572047,POINT(50.5008 15.3775),15.3775,50.5008,ZST78
+171,Sobotka,558809,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Sobotka,573493,POINT(50.4662 15.1692),15.1692,50.4662,ZST146
+172,Mlýnec,562900,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Kopidlno,573060,POINT(50.3185 15.222),15.222,50.3185,ZST95
+173,Mladějov v Čechách,558601,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Mladějov,573205,POINT(50.4817 15.2277),15.2277,50.4817,ZST94
+174,Kopidlno,563007,stanice,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Kopidlno,573060,POINT(50.3347 15.2616),15.2616,50.3347,ZST69
+175,Pševes,563106,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Kopidlno,573060,POINT(50.346 15.2969),15.2969,50.346,ZST126
+176,Bartoušov zastávka,563601,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Jičíněves,573001,POINT(50.3558 15.3123),15.3123,50.3558,ZST3
+177,Bartoušov,563205,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Jičíněves,573001,POINT(50.362 15.3258),15.3258,50.362,ZST2
+178,Jičíněves,563304,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Jičíněves,573001,POINT(50.3751 15.3385),15.3385,50.3751,ZST62
+179,Lovčice obec,564203,zastávka,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Lovčice,570320,POINT(50.1712 15.3837),15.3837,50.1712,ZST88
+180,Jinolice,554006,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Jinolice,549151,POINT(50.4798 15.3364),15.3364,50.4798,ZST63
+181,Staré Místo u Jičína,563502,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Staré Místo,549096,POINT(50.407 15.3542),15.3542,50.407,ZST150
+182,Nemyčeves,563403,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Nemyčeves,573230,POINT(50.3881 15.3617),15.3617,50.3881,ZST101
+183,Převýšov,530303,stanice,Královéhradecký kraj,CZ052,Hradec Králové,CZ0521,Hradec Králové,5205,Převýšov,570681,POINT(50.1534 15.4086),15.4086,50.1534,ZST125
+184,Libošovice,559005,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Libošovice,573116,POINT(50.4869 15.1648),15.1648,50.4869,ZST83
+185,Malechovice,558908,zastávka,Královéhradecký kraj,CZ052,Jičín,CZ0522,Jičín,5207,Libošovice,573116,POINT(50.4942 15.1887),15.1887,50.4942,ZST91

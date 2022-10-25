@@ -1,0 +1,30 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+.topImage {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+
+  h1 {
+    position: absolute;
+    font-size: 4em;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.6);
+    z-index: -10;
+  }
+}

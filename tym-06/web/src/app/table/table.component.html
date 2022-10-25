@@ -1,0 +1,48 @@
+
+<mat-form-field appearance="fill">
+    <mat-label>Seřadit podle</mat-label>
+    <mat-select [formControl]="sort">
+      <mat-option value="nazev">
+        Názvu
+      </mat-option>
+      <mat-option value="obec">
+        Obce
+      </mat-option>
+      <mat-option value="zahajeni">
+        Data zahájení
+      </mat-option>
+      <mat-option value="geolokace">
+        Vzdálenosti od vás
+      </mat-option>
+    </mat-select>
+</mat-form-field><br>
+<mat-form-field appearance="fill" style="width: 100%" appearance="legacy">
+    <mat-label>Vyhledávání</mat-label>
+    <input matInput [formControl]="search">
+</mat-form-field>
+  
+<div style="display: flex" class="buttons">
+    <div [style.backgroundColor]="ukrajina ? '' : '#3f51f5'" [style.color]="ukrajina ? '#000' : '#fff'" (click)="switchUkrajina(false)">Všechny záznamy</div>
+    <div [style.backgroundColor]="ukrajina ? '#3f51f5' : ''" [style.color]="ukrajina ? '#fff' : '#000'" (click)="switchUkrajina(true)"><div style="display: flex; align-items: center"><img height="20px" src="/assets/ukraine.png"><span style="margin-left: 5px">Ukrajina</span></div></div>
+</div>
+<table id="sbirky">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Název</th>
+            <th>Obec</th>
+            <th>Datum zahájení</th>
+            <th *ngIf="this.sort.value == 'geolokace'">Vzdálenost od vás</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let feature of searchFilteredData">
+            <td></td>
+            <td><a routerLink="/sbirka/{{feature?.properties?.['OBJECTID']}}" href="/sbirka/{{feature?.properties?.['OBJECTID']}}">{{feature?.properties?.nazev}}</a></td>
+            <td>{{feature?.properties?.nazev_obce}}</td>
+            <td *ngIf="feature?.properties?.zahajeni">{{_AppService.formatDate(feature?.properties?.zahajeni)}}</td>
+            <td *ngIf="!feature?.properties?.zahajeni">{{feature?.properties?.zahajeniString}}</td>
+            <td *ngIf="feature?.properties?.distance">{{formatDistance(feature?.properties?.distance)}} km</td>
+        </tr>
+    </tbody>
+</table>

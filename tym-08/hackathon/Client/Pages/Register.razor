@@ -1,0 +1,39 @@
+﻿@page "/register"
+@using System.Text.Json
+@inject HttpClient client
+@inject NavigationManager NavManager
+<PageTitle>Registrace</PageTitle>
+
+<input name="username" @bind-value="@username" type="text"  placeholder="uživatelské jméno.." />
+<input name="password" @bind-value="@password"  type="text" placeholder="heslo.." />
+<input name="password" @bind-value="@passwordcheck" type="text" placeholder="heslo.." />
+<button @onclick="RegisterPost" @onclick:preventDefault="true" @onclick:stopPropagation="true">Registrovat</button>
+<p>@errorMessage</p>
+
+@code {
+    string username { get; set; }
+    string password { get; set; }
+    string passwordcheck { get; set; }
+    string errorMessage { get; set; }
+
+    public async void RegisterPost()
+    {
+        if (username == null || password == null || passwordcheck == null) errorMessage = "Něco se pokazilo";
+        if (password != passwordcheck) errorMessage = "Něco se pokazilo";
+
+        object loginData = new LoginUserData()
+            {
+                username = username,
+                password = password
+            };
+        var response = await client.PostAsJsonAsync("/register", loginData);
+        var data = await response.Content.ReadAsStringAsync();
+
+        if(data == "\"OK\""){
+            NavManager.NavigateTo("/");
+        }
+        else{
+            errorMessage = "Něco se pokazilo";
+        }
+    }
+}

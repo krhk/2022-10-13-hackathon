@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    font-size: 1.5em;
+}
+
+.wrapper {
+    margin-top: 1em;
+    width: 60%;
+    height: 100%;
+}
+
+.postWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 65%;
+    background-color: blue;
+    margin-top: 1em;
+}
+
+.postPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    width: 70%;
+    background-color: #E9E9E9;
+    border: 2px solid #919192;
+}
+
+.postPhoto img {
+    width: 5em;
+}
+
+.postMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    width: 30%;
+    background-color: #E9E9E9;
+    border: 2px solid #919192;
+    border-left: 0;
+}
+
+.postMap img {
+    width: 5em;
+}
+
+.bottomContainer {
+    display: flex;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 12%;
+}
+
+.bottomContainer textarea {
+    padding: 1em;
+    margin: 0;
+    font-size: 0.6em;
+    width: 70%;
+    height: 100%;
+    resize: none;
+    background-color: #E9E9E9;
+    outline: none;
+    color: #919192;
+    border: 2px solid #919192;
+    box-sizing: border-box;
+}
+
+.bottomContainer button {
+    width: 80%;
+    height: 100%;
+    border-radius: 0;
+    font-size: 0.75em;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #919192;
+    background-color: white;
+}
+
+.bottomContainerButtonWrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 30%;
+}

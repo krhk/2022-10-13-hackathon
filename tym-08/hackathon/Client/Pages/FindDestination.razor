@@ -1,0 +1,46 @@
+﻿@page "/destination"
+
+@inject IJSRuntime jsRuntime
+@inject SingletonStorageModel SingletonModel
+<PageTitle>Přehled Destinací</PageTitle>
+
+<div id="grid">
+    <div>
+        <h3>Přehled Destinací</h3>
+
+        <input class="find" oninput="
+            let s = document.getElementById('find').value;
+            let els = document.getElementsByClassName('trip');
+            for (let el of els) {
+                el.style = `display: ${el.innerText.toLowerCase().includes(s.toLowerCase()) ? 'block': 'none'}`;
+            }
+            for (let m of vrstva.getMarkers()) {
+                m.getActive().style.display = m._options.title.toLowerCase().includes(s.toLowerCase()) ? 'block' : 'none';
+            }
+
+            " id="find" type="text" placeholder="Hledej">
+    
+            <div>
+           
+                @foreach (KeyValuePair<string, List<ApiData>> entry in SingletonModel.model) {
+                    @foreach (var x in entry.Value) {
+                            <div class="trip" id="@(x.Id)">@(x.Name)</div>
+                    }
+                }
+                
+            </div>
+        </div>
+        <div>
+            <div id="parent">
+                <div id="m" style="height:100%"></div>
+            </div>
+        </div>
+    </div>
+
+    @code {
+    protected override async Task OnAfterRenderAsync(bool first)
+    {
+        if (first)
+            await jsRuntime.InvokeVoidAsync("loadJs", "js/OverviewMapy.js");
+    }
+    }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/leaflet-0.7.2/leaflet.ajax.min.js"></script>
+    <script src="map.js"></script>
+    <title>[oupen] školy</title>
+</head>
+<body>
+    <header>
+        <h1>[oupn] školy</h1>
+        <p>Portál škol a školských zařízení na základě otevřených dat KHK</p>
+    </header>
+    <main id="main">
+        <div id="filter">
+            <form onsubmit="" id="filterForm">
+                <select name="type" id="selectType">
+                    <option value="" disabled selected>Typ zařízení</option></select>
+                <select name="town" id="selectTown" >
+                    <option value="" disabled selected>Okres</option></select>
+                <input type="number" name="distance" id="selectDistance" placeholder="Maximální vzdálenost" step="5">
+                <button type="button" onclick="filtrovat()">Filtrovat</button>
+            </form>
+        </div>
+        <div id="mapDiv">
+            <div id="map"></div>
+        </div>
+        <table id="results">
+
+        </table>
+    </main>
+    <footer>
+        <address>
+            | The Joking Cats 2022
+        </address>
+    </footer>
+</body>
+<script>
+    //50.3836289N, 15.8664639E
+var mymap = L.map('map').setView([50.3836289, 15.8664639], 13);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+
+}).addTo(mymap);  
+mymap.setZoom(8);
+
+</script>
+<script src="script.js"></script>
+</html>

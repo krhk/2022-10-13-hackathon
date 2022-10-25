@@ -1,0 +1,32 @@
+#sbirky {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #sbirky td, #sbirky th {
+    padding: 8px;
+  }
+  
+  #sbirky tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #sbirky tr:hover {background-color: #ddd;}
+  
+  #sbirky th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3f51f5;
+    color: white;
+  }
+
+.buttons > div {
+    padding: 10px;
+    padding-bottom: 5px;
+    border: solid 2px #3f51f5;
+    border-bottom: 0px;
+    margin-right: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+}

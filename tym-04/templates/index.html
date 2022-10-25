@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+<title>Ligma Java</title>
+</head>
+<body style="/*overflow-y: shown;overflow: scroll;*/">
+<div class="topnav">
+  <a class="active" href="/">Hlavní stránka</a>
+  <a href="/map">Mapa</a>
+  <a href="/contact">Kontakt</a>
+  <a href="/about">O nás</a>
+</div>
+<br>
+<div class="nemovistosti">
+{{mapdata|safe}}
+</div>
+<footer>
+Copyright Ligma Java, 2022
+</footer>
+</body>
+</body>
+</html>

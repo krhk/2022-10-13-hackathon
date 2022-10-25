@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>app</title>
+    
+    <link href="App.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-NS3WwKCLdl8WRStrTiBzk8PKLnXOeF0&libraries=places" defer></script>
+    <script src="zakladny.js" defer></script>
+
+    <script src="App.js" defer></script>
+    
+</head>
+<body>
+  
+
+    <div class="jumbotron">
+
+
+            <div id="googleMap">
+
+            </div>
+            <div id="output" class="center">
+       
+
+            </div>
+
+
+    </div>
+    <div class="fastest-routes">Zobrazit nejrychlejší cestu</div>
+    <div class="input-parent">
+        <input class="location_input" id="searchTextField" type="text" size="50" placeholder="Enter a location"
+            autocomplete="on" runat="server" />
+        <input class="location_input" id="city2" name="city2" />
+        <input class="location_input" id="cityLat" name="cityLat" />
+        <input class="location_input" id="cityLng" name="cityLng" />
+    </div>
+
+
+</body>
+</html>
+

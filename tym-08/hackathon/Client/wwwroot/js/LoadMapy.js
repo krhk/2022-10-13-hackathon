@@ -1,0 +1,1 @@
+﻿loadJs("https://api.mapy.cz/loader.js")

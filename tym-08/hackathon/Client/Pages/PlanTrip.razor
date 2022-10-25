@@ -1,0 +1,92 @@
+﻿@page "/planTrip/{id:int}"
+
+@inject IJSRuntime jsRuntime
+@inject NavigationManager NavManager
+@inject SingletonStorageModel singletonModel
+@inject ILocalStorageService storageService
+
+<PageTitle>Naplánuj Výlet</PageTitle>
+
+<div id="grid">
+    <div>
+        <h2>Plánování Výletu</h2>
+
+        <h3>Datum</h3>
+        <input id="date" type="date" @bind-value="@trip.WhenDate"/>
+
+        <h3>Start</h3>
+        <input type="text" class="start" @bind-value="@loc">
+
+
+        <div class="time">
+            <input type="time" title="Čas Odjezdu" @bind-value="@trip.ToTrip">
+        </div>
+        <h3>Lokalita</h3>
+        <input type="text" disabled @bind-value="@Dest.Name">
+        <div class="time" title="Čas Odjezdu">
+            <input type="time" class="finish" @bind-value="@trip.ComeBack">
+        </div>
+        <h3>Cíl</h3>
+        <input type="text" @bind-value="@loc" disabled>
+        
+        <input type="text" id="des_x" value="@Dest.XPosition" style="display:none" />
+        <input type="text" id="des_y" value="@Dest.YPosition" style="display:none" />
+
+        <input type="text" id="x" @bind-value="@trip.StartPosX" style="display:none"/>
+        <input type="text" id="y" @bind-value="@trip.StartPosY" style="display:none"/>
+
+        <!--
+        <div id="Obrazky">
+            <div class="nahranyObrazek">
+                <img class="nahledObrazku" />
+                <input type="file" name="obrazky" class="obrazek" onchange="NactiNahled(event,this)" onclick="PridejInput(event)" multiple/>
+            </div>
+        </div>
+        -->
+   
+        <a id="url1" href="https://mapy.cz" target="_blank">Odkaz do plánování na mapy.cz</a>
+
+        <button @onclick="@Save">Uložit</button>
+    </div>
+    <div>
+        <div id="parent">
+            <div id="m" style="height:100%"></div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    public string loc { get; set; } = "";
+
+    public Trip trip { get; set; } = new Trip() { WhenDate = DateTime.Now };
+
+    public ApiData Dest { get; set; } = new ApiData();
+
+    protected override async Task OnParametersSetAsync() {
+        await jsRuntime.InvokeVoidAsync("loadJs", "js/PlanTrip.js");
+
+        if (singletonModel.model?.Count > 0) {
+            Dest = singletonModel.model.Select(m => m.Value).Where(a => a.Find(b => b.Id == id) != null).FirstOrDefault().Where(a => a.Id == id).FirstOrDefault();
+        }
+    }
+
+    public async Task Save() 
+    {
+        trip.StartPosX = await jsRuntime.InvokeAsync<string>("returnX");
+        trip.StartPosY = await jsRuntime.InvokeAsync<string>("returnY");
+        trip.Name = Dest.Name;
+        trip.EndPosX = Dest.XPosition;
+        trip.EndPosY = Dest.YPosition;
+        
+        singletonModel.trips.Add(trip);
+
+
+
+        await storageService.SetItemAsync<List<Trip>>("trips", singletonModel.trips);
+
+        NavManager.NavigateTo("/destination");
+    }
+}

@@ -1,0 +1,37 @@
+﻿@page "/login"
+@using System.Text.Json
+@inject HttpClient client
+
+<PageTitle>Přihlásit se</PageTitle>
+
+<input name="username" @bind-value="@username" type="text"  placeholder="uživatelské jméno.." />
+<input name="password" @bind-value="@password"  type="text" placeholder="heslo.." />
+<button @onclick="LoginPost" @onclick:preventDefault="true" @onclick:stopPropagation="true"> Přihlásit se</button>
+<p>@errorMessage</p>
+
+@code {
+    string username { get; set; }
+    string password { get; set; }
+    string errorMessage { get; set; }
+
+    public async void LoginPost()
+    {
+        if (username == "" || password == "" || password == null || username == null) errorMessage = "Něco se pokazilo";
+        object loginData = new LoginUserData()
+        {
+                username = username,
+                password = password
+        };
+        var response = await client.PostAsJsonAsync("/login", loginData);
+        var data = await response.Content.ReadAsStringAsync();
+        if (data == "N\u011Bco se pokazilo")
+        {
+            errorMessage = "Něco se pokazilo";
+            return;
+        }
+        try{
+            var user = await response.Content.ReadFromJsonAsync<dbUser>();  
+        } catch{}
+    }
+    
+}

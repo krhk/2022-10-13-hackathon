@@ -1,0 +1,41 @@
+.planned-repairs{
+    display:flex;
+    flex-direction: column;
+
+    table{
+        width:100%;
+        border-collapse: collapse;
+        margin-top: 3rem;
+      }
+      
+      th{
+          text-align: left;
+          padding-bottom: .7rem;
+      }
+      
+      tr{
+          border-bottom: 1px solid #E7E7E7;
+      }
+      
+      td{
+          padding: .4rem 0;
+      }
+      table a:hover {
+          color: rgb(0, 0, 0);
+      }
+
+
+      .show-all{
+        width: fit-content;
+        color: #0066CC;
+        display: block;
+        // margin: 0 auto;
+        margin-top: 2rem;
+        margin-right: 2rem;
+
+        align-self: flex-end;
+        &:hover{
+            color: black;
+        }
+      }
+}

@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.container {
+    height: 25em;
+    width: 40em;
+    border: 1px black solid;
+    margin: 0;
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+}
+
+.paragraphContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 40em;
+}
+
+.paragraphContainer p {
+    margin-right: 1em;
+    margin-bottom: 0;
+}
+
+.paragraphContainer img {
+    margin-right: 0.5em;
+}
+
+.paragraph {
+    margin: 0.5em 0 0;
+    padding: 0;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.divider {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

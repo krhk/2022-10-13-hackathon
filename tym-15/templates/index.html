@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TudumTudum | APP</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mobile.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/desktop' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tab.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <!-- jQuery / Javascript-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <!-- Own -->
+    <script src="{% static 'js/hambac.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"></script>
+    <!--Meta-->
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'fav/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'fav/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'fav/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'fav/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'fav/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'fav/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'fav/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'fav/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'fav/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{% static 'fav/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'fav/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'fav/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'fan/favicon-16x16.png' %}">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FontAwesome 6 -->
+    <link href="{% static '/fontawesome/css/fontawesome.css' %}" rel="stylesheet">
+    <link href="{% static '/fontawesome/css/brands.css' %}" rel="stylesheet">
+    <link href="{% static '/fontawesome/css/solid.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+<nav class="nav-main" id="nav-main">
+    <div class="navLogo" id="logoo">
+        <img src="{% static 'images/train.png' %}" class="nav-logo">
+    </div>
+    <div class="navDesktop" id="polozkyPhone">
+        <a id="a-nav-main" class="polozkaDesktopActive" href="#domovska-stranka">Domů</a>
+        <a id="a-nav-main" class="polozkaDesktop" href="#onas">O nás</a>
+        <a id="a-nav-main" class="polozkaDesktop" href="#sluzby">Kontakt</a>
+    </div>
+    <div class="hamburger" id="hambac" onclick="hambacMenu()">
+        <img src="{% static 'images/icon.png' %}" class="menu-icon" id="show"></i>
+    </div>
+</nav>
+<header>
+    <div class="header-image">
+        <div class="header-content">
+            <h1>TudumTudum</h1>
+            <h2>APPka pro vyhledání spoje</h2>
+            <p>Aplikace TudumTudum vyhledá důležíté informace o spojích.</p>
+        </div>
+    </div>
+</header>
+<article>
+    <section>
+        <form autocomplete="off">
+            <div>
+                <h2 class="zadej-stanici">Zadejte název stanice</h2>
+            </div>
+            <div class="autocomplete" style="width:300px;">
+                <input type="hidden" name="ids" , id="ids">
+                <input id="myInput" type="text" name="myCountry" placeholder="Název stanice">
+            </div>
+            <div>
+                <input type="button" id="buttonMain" class="button" value="VYHLEDAT">
+            </div>
+            <div id="results">
+                <!--Obsah vygenerovany-->
+ <!--               <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Linka</th>
+                        <th scope="col">Čekající linka</th>
+                        <th scope="col">Čekající dopravce</th>
+                        <th scope="col">Příjezd čekajícího</th>
+                        <th scope="col">Odjezd čekajícího</th>
+                        <th scope="col">Nejpozdější odjezd čekajícího</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                        <td>hodnota</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div> -->
+        </form>
+    </section>
+    <section class="last-section">
+        <h2>Vyhledávání spoje</h2>
+        <p>
+            Pro vyhledání spoje zadejte název cílové stanice. Aplikace vyhledá navazující spoje a jejich časovou návaznost. Aplikace zobrazuje i dobu čekání následujícího spoje na spoj zpožděný.
+        </p>
+    </section>
+    <!--
+    <section>Dolni popis box</section> tady nemáme co napsat ...
+    -->
+</article>
+<footer>
+    <div class="footer-box-a">
+        <a href="https://www.facebook.com/" title="Facebook"><i
+                class="fab fa-facebook-square footer-social"></i></a>
+        <a href="https://cz.linkedin.com/" title="LinkedIn"><i
+                class="fab fa-linkedin footer-social"></i></a>
+        <a href="https://twitter.com/" title="Twitter"><i
+                class="fab fa-twitter-square footer-social"></i></a>
+    </div>
+    <div class="footer-box-b">
+        <h2>O aplikaci</h2>
+        <p>Aplikace vznikla v rámci Hackathonu Královéhradeckého kraje 2022 za 7 hodin studenty z Univerzity Hradec Králové.</p>
+    </div>
+    <div class="footer-box-b">
+        <h2>O autorech</h2>
+        <p>
+        Lukáš Trkan<br>
+        Lukáš Tuček<br>
+        David Louda<br>
+        Jiří Janďourek<br>
+        </p>
+    </div>
+    <div class="footer-box-b">
+        <h2>Použité datové sady</h2>
+        <p>Čekací doby autobusových linek IREDO<br>
+            Železniční stanice a zastávky IREDO<br>
+            Autobusové zastávky IREDO
+            </p>
+    </div>
+</footer>
+<script src="{% static 'app.js' %}">
+</script>
+</body>
+</html>

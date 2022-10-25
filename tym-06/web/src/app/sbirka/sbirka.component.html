@@ -1,0 +1,85 @@
+<div class="container">
+<div *ngIf="data">
+<h1>{{data?.properties.nazev}}</h1>
+<table class="table">
+    <tr>
+        <th>Adresa</th>
+        <td>{{data?.properties.nazev_obce}}, {{data?.properties.nazev_ulice}} {{data?.properties.cislo_domovni}}</td>
+    </tr>
+    
+    <tr>
+        <th>Právní forma</th>
+        <td>{{data?.properties.pravni_forma}}</td>
+    </tr>
+    <tr>
+        <th>Bankovní účet</th>
+        <td>{{data?.properties.cislo_bankovniho_uctu}}</td>
+    </tr>
+    <tr>
+        <th>Účel</th>
+        <td>{{data?.properties.ucel}}</td>
+    </tr>
+    <tr>
+        <th>Webová stránka</th>
+        <td><a [href]="data?.properties.www" target="_blank">{{data?.properties.www}}</a></td>
+    </tr>
+    <tr>
+        <th>IČO společnosti</th>
+        <td>{{data?.properties.ico}}</td>
+    </tr>
+</table>
+<table class="table" style="margin-top: 10px">
+    <tr>
+        <th>
+            Datum zahájení
+        </th>
+        <td *ngIf="data?.properties?.zahajeni">{{_AppService.formatDate(data?.properties?.zahajeni)}}</td>
+        <td *ngIf="!data?.properties?.zahajeni">{{data?.properties?.zahajeniString}}</td>
+    </tr>
+    <tr>
+        <th>
+            Datum ukončení
+        </th>
+        <td >{{data?.properties?.ukonceni}}</td>
+    </tr>
+</table>
+
+<div *ngIf="statutarniOrgany && (statutarniOrgany.length ?? 0) > 0" style="margin-top: 20px">
+    <h2>Statutární orgány</h2>
+<div *ngFor="let organ of statutarniOrgany">
+    <b>{{uppercase(organ.role)}}</b> - <span>{{organ.titul}} {{organ.name}} {{organ.surname}}</span>
+
+</div>
+</div>
+<div style="border: 3px solid #3f51f5; padding: 20px; border-radius: 20px; display: flex; flex-wrap: wrap; margin-top: 20px;">
+    <div>
+    <h2>Nový příspěvek</h2>
+        <form [formGroup]="prispevekForm">
+            <mat-form-field appearance="legacy">
+                <mat-label>Kolik chcete přispět?</mat-label>
+                <input matInput formControlName="castka">
+            </mat-form-field>
+        </form>
+        <table class="transfer-table">
+            <tr *ngIf="bankDetails.prefix"> 
+                <th>Předčíslí</th>
+                <td>{{bankDetails.prefix}}</td>
+            </tr>
+            <tr> 
+                <th>Číslo účtu</th>
+                <td>{{bankDetails.cislo}}</td>
+            </tr>
+            <tr> 
+                <th>Kód banky</th>
+                <td>{{bankDetails.cisloBanky}}</td>
+            </tr>
+            <tr>
+                <th>Částka</th>
+                <td>{{prispevekForm.value.castka}} Kč</td>
+            </tr>
+        </table>
+    </div>
+    <div style="display: flex; justify-content: center;">
+    <img [src]="QRCodeURL" alt="QR kód pro platbu" style="width: 100%; max-width: 300px;">
+</div>
+</div></div>

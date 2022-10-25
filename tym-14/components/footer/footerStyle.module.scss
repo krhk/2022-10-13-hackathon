@@ -1,0 +1,52 @@
+.footer {
+   position: relative;
+   color: #fff;
+   background-color: #393939;
+   padding-top: 5vh;
+   padding-bottom: 10vh;
+
+   .divider {
+      position: absolute;
+      width: 1px;
+      height: 52%;
+      left: 50%;
+      background-color: #7e7e7e;
+   }
+
+   .footerNav {
+      display: flex;
+      justify-content: space-evenly;
+
+      h3 {
+         font-size: 1.7em;
+      }
+
+      .section {
+         width: 15%;
+
+         ul {
+            all: unset;
+
+            li {
+               all: unset;
+               display: block;
+
+               a {
+                  all: unset;
+                  cursor: pointer;
+                  font-weight: 400;
+               }
+
+               a:hover {
+                  color: rgb(202, 202, 202);
+               }
+            }
+         }
+      }
+   }
+   .copyright {
+      padding-top: 12vh;
+      text-align: center;
+   }
+
+}

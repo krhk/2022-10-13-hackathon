@@ -1,0 +1,62 @@
+﻿@inherits LayoutComponentBase
+@inject SingletonStorageModel SingletonModel
+@inject ILocalStorageService storageService
+@inject HttpClient client
+
+<div class="page">  
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    public Dictionary<string, List<ApiData>>? Model { get; set; }
+    protected override async Task OnParametersSetAsync()
+    {
+        Model = SingletonModel.model;
+        if (Model == null) {
+            await LoadCache();
+            if (SingletonModel.trips == null)
+                SingletonModel.trips = new();
+            if (SingletonModel.model == null)
+                await RefreshCache();
+            Model = SingletonModel.model;
+        }
+        
+       
+    }
+
+
+    public async Task<Dictionary<string, List<ApiData>>> DownloadData() {
+        var data = await client.GetFromJsonAsync<Dictionary<string, List<ApiData>>>("/getallservicedata");
+        await storageService.SetItemAsync<Dictionary<string, List<ApiData>>>("store", data);
+        return data;
+    }
+
+    public async Task ClearLocalStorage() 
+    {
+        await storageService.RemoveItemAsync("store");
+    }
+
+    public async Task LoadCache() 
+    {
+        SingletonModel.model = await storageService.GetItemAsync<Dictionary<string, List<ApiData>>>("store");
+        SingletonModel.trips = await storageService.GetItemAsync<List<Trip>>("trips");
+    }
+
+    public async Task RefreshCache()
+    {
+        var data = await DownloadData();
+        SingletonModel.model = data;
+    }
+}

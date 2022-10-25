@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "sourceRoot": "",
+    "sources": [
+        "../scss/form.scss"
+    ],
+    "names": [],
+    "mappings": "AAAA;EACI;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;;;AAGF;EACE;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EAKA;EAEA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EAGA;;;AAIJ;EACE",
+    "file": "form.css"
+}

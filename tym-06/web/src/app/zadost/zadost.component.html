@@ -1,0 +1,29 @@
+<h1>Žádost o novou sbírku</h1>
+<p>Žádost bude zaslána Královéhradeckému kraji ke schválení</p>
+<form [formGroup]="form" class="form">
+    <mat-form-field appearance="fill" appearance="legacy">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+    </mat-form-field><br>
+    <mat-form-field appearance="fill" appearance="legacy">
+        <mat-label>Název sbírky</mat-label>
+        <input matInput formControlName="nazev">
+    </mat-form-field><br>
+    <mat-form-field appearance="fill" appearance="legacy">
+        <mat-label>Účel</mat-label>
+        <textarea matInput formControlName="ucel"></textarea>
+    </mat-form-field><br>
+    <mat-form-field appearance="fill" appearance="legacy">
+        <mat-label>Název společnosti</mat-label>
+        <input matInput formControlName="spolecnost">
+    </mat-form-field><br>
+    <mat-form-field appearance="fill" appearance="legacy">
+        <mat-label>IČO</mat-label>
+        <input matInput formControlName="ICO">
+    </mat-form-field><br>
+    <mat-form-field appearance="fill" appearance="legacy">
+        <mat-label>Webové stránky</mat-label>
+        <input matInput formControlName="web">
+    </mat-form-field><br>
+    <button mat-raised-button color="primary">Odeslat</button>
+</form>
